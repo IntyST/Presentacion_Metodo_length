@@ -1,3 +1,6 @@
+
+import java.awt.Color;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -55,7 +58,7 @@ public class EjercicioConMetodo_length extends javax.swing.JFrame {
             }
         });
 
-        txtVariable.setBackground(new java.awt.Color(153, 255, 204));
+        txtVariable.setBackground(new java.awt.Color(204, 255, 204));
         txtVariable.setForeground(new java.awt.Color(0, 0, 0));
 
         jLabel1.setFont(new java.awt.Font("DejaVu Serif", 2, 12)); // NOI18N
@@ -81,40 +84,41 @@ public class EjercicioConMetodo_length extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(34, 34, 34)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(34, 34, 34)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblNumrCaratrs, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(lblNumrPalbrs, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(24, 24, 24)
-                                .addComponent(lblNumrBlanco, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(btnAnalizar, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(lblDatos, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(txtVariable, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(l, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(18, 18, 18)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(lblNumrCaratrs, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(lblNumrPalbrs, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(24, 24, 24)
+                                        .addComponent(lblNumrBlanco, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(btnAnalizar, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(lblDatos, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(txtVariable, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(l)))
+                .addGap(0, 17, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(16, 16, 16)
+                .addGap(15, 15, 15)
                 .addComponent(l)
-                .addGap(47, 47, 47)
+                .addGap(48, 48, 48)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblDatos)
                     .addComponent(txtVariable, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -148,17 +152,23 @@ public class EjercicioConMetodo_length extends javax.swing.JFrame {
         // Usa el método contarPalabras para obtener el número de palabras
         int cantidadPalabras = contarPalabras(variable);
 
-        // Usa la variable correcta, que es contarEspaciosEnBlanco
+        // Usa el método contar espacios en blanco para obtener el numero de espacios en blanco
         int contarEspaciosEnBlanco = contarEspaciosEnBlanco(variable);
+
+        // Llama al método determinarColorTexto y pasa el número de caracteres como argumento
+        Color colorTexto = determinarColorTexto(numeroCaracteres);
 
         // Muestra los resultados
         lblNumrCaratrs.setText(String.valueOf(numeroCaracteres));
         lblNumrPalbrs.setText(String.valueOf(cantidadPalabras));
         lblNumrBlanco.setText(String.valueOf(contarEspaciosEnBlanco));
+
+        // Establece el color del texto en el JTextField
+        txtVariable.setForeground(colorTexto);
     }//GEN-LAST:event_btnAnalizarActionPerformed
 
     private int contarPalabras(String variable) {
-        int palabras = 1; // Se inicializa en 1, ya que si hay al menos un caracter, hay al menos una palabra.
+        int palabras = 1; // Se inicializa en 1, ya que si hay al menos un caracter, hay al menos una palabra
 
         // Recorrer la cadena con un bucle for
         for (int i = 0; i < variable.length(); i++) {
@@ -170,18 +180,43 @@ public class EjercicioConMetodo_length extends javax.swing.JFrame {
         return palabras;
 
     }
-
+    
+    // Este método cuenta el número de espacios en blanco en una cadena dada.
     private int contarEspaciosEnBlanco(String espacio) {
-        int espacioBlanco = 0;
+        int espacioBlanco = 0;// Inicializa un contador llamado espacioBlanco en cero.
 
         for (int i = 0; i < espacio.length(); i++) {
             if (espacio.charAt(i) == ' ') {
                 espacioBlanco++;
             }
         }
-
+        // Devuelve el total de espacios en blanco encontrados en la cadena.
         return espacioBlanco;
     }
+    // Este método determina el color del texto basándose en la longitud de una cadena.
+    private Color determinarColorTexto(int longitud) {
+    Color color;// Declara una variable llamada 'color' que almacenará el color a asignar.
+
+    if (longitud >= 1 && longitud <= 5) {
+        color = Color.red;
+    }
+    else if (longitud >= 6 && longitud <= 10) {
+        color = Color.green;
+    }
+    else if (longitud >= 11 && longitud <= 15) {
+        color = Color.black;
+    }
+    else if (longitud >= 16 && longitud <= 20) {
+        color = Color.pink;
+    }
+    else {
+        color = Color.magenta;
+    }
+
+    // Devuelve el color asignado según las condiciones anteriores.
+    return color;
+}
+
 
     /**
      * @param args the command line arguments
